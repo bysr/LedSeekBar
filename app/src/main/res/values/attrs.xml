@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScaleView">
+        <attr name="markTextArrays" format="reference"/>
+        <attr name="markTextColor" format="color"/>
+        <attr name="markTextSize" format="dimension"/>
+        <attr name="maxS" format="float"/>
+        <attr name="minS" format="float"/>
+        <attr name="textPaddingS" format="dimension" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="ScaleLed">
+
+        <!--每种数量-->
+        <attr name="showNumber" format="integer"/>
+        <!--默认显示的数量-->
+        <attr name="showDefault" format="integer"/>
+
+    </declare-styleable>
+
+
+</resources>

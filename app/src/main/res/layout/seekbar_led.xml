@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/seekbar_diban"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <hipad.ledseekbar.view.VSeekBar
+                android:id="@+id/seekBar"
+                style="?android:attr/seekBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/kedu_new"
+                android:max="100"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@mipmap/tuiniu" />
+
+        </RelativeLayout>
+
+        <hipad.ledseekbar.view.ScaleLed
+            android:id="@+id/scaleLED"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/rl_seekbar"
+            app:showDefault="6"></hipad.ledseekbar.view.ScaleLed>
+
+        <hipad.ledseekbar.view.ScaleView
+            android:id="@+id/scaleView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/rl_seekbar"
+            app:markTextArrays="@array/scaleArray"
+            app:markTextColor="@color/colorAccent"
+            app:maxS="100"
+            app:minS="0" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
