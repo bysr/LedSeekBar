@@ -43,8 +43,7 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="10dp"
-            android:layout_toLeftOf="@id/rl_seekbar"
-            app:showDefault="6"></hipad.ledseekbar.view.ScaleLed>
+            android:layout_toLeftOf="@id/rl_seekbar"></hipad.ledseekbar.view.ScaleLed>
 
         <hipad.ledseekbar.view.ScaleView
             android:id="@+id/scaleView"
